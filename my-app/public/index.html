@@ -20,6 +20,11 @@
 
     <link href="cssFile/index.css" rel="stylesheet" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <title>AutoCare Lanka</title>
   </head>
   <body>
@@ -93,11 +98,115 @@
     </section>
     <!--End Hero Section-->
 
+    <!--Body Start-->
+    <p text-align="center">
+      Ithila thaan michcha body content varum. See the code in line 101
+    </p>
+    <!--End body-->
+
+    <!--Footer-->
+    <footer class="footer bg-dark pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <!-- Company Info -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">AutoCare Lanka</h5>
+            <p>
+              AutoCare Lanka is your trusted partner in providing top-notch
+              automotive care services. We ensure your vehicle receives the best
+              maintenance and repair solutions.
+            </p>
+          </div>
+
+          <!--Quick Links-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 quick-links">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+            <p><a href="#" class="text-">Home</a></p>
+            <p><a href="#" class="text-">About Us</a></p>
+            <p><a href="#" class="text-">Services</a></p>
+            <p><a href="#" class="text-">Careers</a></p>
+            <p><a href="#" class="text-">Contact Us</a></p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> 66, Attidiya Road, Rathmalana,
+              Sri Lanka 10390.
+            </p>
+            <p><i class="fas fa-envelope mr-3"></i> info@autocarelanka.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +94 123 456 789</p>
+            <p><i class="fas fa-print mr-3"></i> +94 123 456 780</p>
+          </div>
+
+          <!-- Opening Hours and Social Media -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Opening Hours</h5>
+            <p><i class="far fa-clock mr-3"></i> Mon - Fri : 9 AM - 7 PM</p>
+            <p><i class="far fa-clock mr-3"></i> Sat - Sun : 9 AM - 7 PM</p>
+
+            <h5 class="text-uppercase mt-4 mb-4 font-weight-bold">Follow Us</h5>
+            <div class="wrapper">
+              <a href="https://facebook.com" class="button">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+              <a href="https://tiktok.com" class="button">
+                <div class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </div>
+              </a>
+              <a href="https://instagram.com" class="button">
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+              <a href="https://youtube.com" class="button">
+                <div class="icon">
+                  <i class="fab fa-youtube"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <!-- Footer Bottom -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">
+              © <span id="currentYear"></span> AutoCare Lanka. All Rights
+              Reserved.
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4">
+            <p class="text-center text-md-right">Designed by CST_GROUP_12</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+
     <!--Bootstrap JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JavaScript to Set Current Year -->
+    <script>
+      // Function to get the current year
+      function setCurrentYear() {
+        const currentYear = new Date().getFullYear(); // Get the current year
+        document.getElementById("currentYear").textContent = currentYear; // Set the year in the span
+      }
+      // Call the function to set the year
+      setCurrentYear();
+    </script>
   </body>
 </html>
